@@ -1,0 +1,49 @@
+
+            p{
+                font-family: arial;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            .video-title{
+                font-family: arial;
+                font-size: 30px;
+                font-weight: bold;
+                width: 550px;
+                line-height: 25px;
+                margin-bottom: 10px;
+                
+            }
+            .info-title{
+                font-family: arial;
+                font-size: 15px;
+                color: grey;
+                margin-bottom: 5px;
+            }
+            .creator-title{
+                font-family: arial;
+                font-size: 15px;
+                color: grey;
+                margin-bottom: 10px
+            }
+            .info-title{
+                
+                font-family: arial;
+                font-size: 15px;
+                color: black;
+                margin-bottom: 10px;
+            
+            }
+            .appleinfo-title{
+                font-size: 15px;
+                background-color: red;
+                padding-left: 20px;
+                color: white;
+                padding-right: 20px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            .shop-link:hover{
+                cursor: pointer;
+                text-decoration: underline;
+        
+            }
