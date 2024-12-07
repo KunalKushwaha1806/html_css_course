@@ -1,0 +1,7 @@
+/*ELEMENTAL SELECTOR*/
+@import url(./PRACTICE2.CSS);
+h2
+{
+    background-color: blue;
+    color: white;
+}
