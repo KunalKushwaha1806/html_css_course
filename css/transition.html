@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #nb
+        {
+            position: relative;
+            top:100px;
+            left: 100px;
+            background-color: bisque;
+            font-size: 30px;
+            height: 75px;
+            width: 75px;
+            padding: 25%;
+            transition: height 10s,width 10s, background-color 10s, border-radius 10s, transform 10s;
+        }
+#nb:hover{
+    height: 300px;
+    width:300px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+    </style>
+    <div id="nb">
+        New Box
+    </div>
+</body>
+</html>

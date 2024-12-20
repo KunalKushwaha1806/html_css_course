@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #nb
+        {
+            position: relative;
+            top:100px;
+            left: 100px;
+            background-color: bisque;
+            font-size: 30px;
+            height: 75px;
+            width: 75px;
+            padding: 25%;
+            animation: demo 50s;
+
+        }
+        @keyframes demo {
+            0%{
+                position: relative;
+                left: 700px;
+                right: 0px;
+                background-color: yellowgreen;
+
+            }
+            50%{
+                position: relative;
+                transform: rotate(360deg);
+                left: 300px;
+                top: 300px;
+
+            }
+            100%{
+                position: relative;
+                transform: rotate(360deg);
+                left: 0px;
+                right: 700px;
+            }
+            
+        }
+        
+
+    </style>
+    <div id="nb">
+        New Box
+    </div>
+</body>
+</html>
