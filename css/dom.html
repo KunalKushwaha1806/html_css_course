@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+        var  x=document.getElementById("Name").value;
+        var domain=/[a-zA-Z]/;
+        if (domain.test(x))
+        {
+            alert("Name is String");
+        }
+        else
+        {
+            alert("Name is not String");
+        }
+    }
+    </script>
+</head>
+<body>
+    <form action="#">
+        <input type="text" id="name" name="name" placeholder="Naam bhro">
+        <br>
+        <input type="submit" value="Dekho">
+    </form>
+</body>
+</html>
