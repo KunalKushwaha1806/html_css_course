@@ -1,4 +1,4 @@
-<!-- WAP to check enteed number is srong number or not -->
+<!-- WAP to check enteed number is srong number or not
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +25,43 @@
         }else{
             alert(temp+" is not a strong number.");
         }
+    </script>
+</body>
+</html> -->
+
+
+<!-- create pascal triangle using js -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=parseInt(prompt("Enter a number:"));
+        var arr=[];
+        for(var i=0;i<n;i++){
+            arr[i]=[];
+            for(var j=0;j<=i;j++){
+                if(j==0 || j==i){
+                    arr[i][j]=1;
+                }else{
+                    arr[i][j]=arr[i-1][j-1]+arr[i-1][j];
+                }
+            }
+        }
+        for(var i=0;i<n;i++){
+            var str="";
+            for(var j=0;j<=i;j++){
+                str+=arr[i][j]+" ";
+            }
+            document.write(str+"<br>");
+        }
+    
+    
     </script>
 </body>
 </html>
