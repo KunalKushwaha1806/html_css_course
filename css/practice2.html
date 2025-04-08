@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("name").value; // Corrected ID
+        var domain = /[@$!()]/;
+        if (domain.test(x)) {
+          alert("Input contains special characters");
+          return false; // Prevent form submission
+        } else {
+          alert("Input is valid");
+          
+          return true; // Allow form submission
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="#" onsubmit="return myFunction();">
+      <input type="text" id="name" name="name" placeholder="Naam bhro" />
+      <br />
+      <input type="submit" value="Dekho" />
+    </form>
+  </body>
+</html>

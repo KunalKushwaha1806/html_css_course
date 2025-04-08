@@ -1,0 +1,31 @@
+<!-- WAP to check enteed number is srong number or not -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=parseInt(prompt("Enter a number:"));
+        var sum=0;
+        var temp=num;
+        while(num>0){
+            var rem=num%10;
+            var fact=1;
+            for(var i=1;i<=rem;i++){
+                fact=fact*i;
+            }
+            sum=sum+fact;
+            num=Math.floor(num/10);
+        }
+        if(sum==temp){
+            alert(temp+" is a strong number.");
+        }else{
+            alert(temp+" is not a strong number.");
+        }
+    </script>
+</body>
+</html>

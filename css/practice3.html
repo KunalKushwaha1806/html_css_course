@@ -1,0 +1,36 @@
+<!-- wap to find the area of trinagle using these coordinates (1,2),(3,8) and (5,7) -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function myFunction() {
+                var x1 = document.getElementById("x1").value;
+                var y1 = document.getElementById("y1").value;
+                var x2 = document.getElementById("x2").value;
+                var y2 = document.getElementById("y2").value;
+                var x3 = document.getElementById("x3").value;
+                var y3 = document.getElementById("y3").value;
+                var area = 0.5 * (x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2));
+                alert("Area of the triangle is " + Math.abs(area));
+            }
+        </script>
+
+    </head>
+    <body>
+        <input type="number" id="x1" value="1">
+        <input type="number" id="y1" value="2">
+        <br>
+        <input type="number" id="x2" value="3">
+        <input type="number" id="y2" value="8">
+        <br>
+        <input type="number" id="x3" value="5">
+        <input type="number" id="y3" value="7">
+        <br>
+        <input type="submit" value="Dekho" onclick="myFunction()">
+        
+    </body>
+</html>

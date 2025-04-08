@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find the name with greater length</title>
+</head>
+<body>
+    <form action="#" onsubmit="return myFunction();">
+        <input type="text" id="name1" name="name1" placeholder="Enter the first name">
+        <br>
+        <input type="text" id="name2" name="name2" placeholder="Enter the second name">
+        <br>
+        <input type="submit" value="Dekho">
+    </form>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("name1").value;
+            var y = document.getElementById("name2").value;
+            if (x.length > y.length) {
+                alert("Name 1 has greater length by " + (x.length - y.length) + " characters.");
+            } else if (x.length < y.length) {
+                alert("Name 2 has greater length by " + (y.length - x.length) + " characters.");
+            } else {
+                alert("Both names have equal length.");
+            }
+        }
+    </script>
+</body>
+</html>
