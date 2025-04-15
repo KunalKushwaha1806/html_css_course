@@ -1,23 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        var x=parseInt(prompt("1st input:"));
-        var y=parseInt(prompt("2nd input:"));
-        var z=parseInt(prompt("3rd input:"));
+<!-- 1.write a JavaScript function that calculates the square of a number . Add comments to explain each part of code.
+ 
+2.write a javascript program to declares variables of different data types(string,number,Boolean) and prints their values and types.
+
+3.write a javascript program that uses arithmetic operators to calculate the sum,difference , product and quotient of two numbers.Display the results.
+
+4.Write a js program that converts a string to a number and a number to a string. show the results and their types before and after the conversion -->
 
 
-        var x=prompt("1st input:");
-        var y=prompt("2nd input:");
-        var z=prompt("3rd input:");
-        var c=x>y && x>z?x:y>z?y:z;
-        alert("greatest among is: "+c);
-    </script>
-    
-</body>
-</html>
+//solution of 1st question
+function square(num) {
+    // This function takes a number as input and returns its square
+    return num * num; // Multiply the number by itself to get the square
+}
+
+//solution of 2nd question
+var str = "Hello"; // String variable
+var num = 42; // Number variable
+var bool = true; // Boolean variable
+console.log("String: ", str, "Type: ", typeof str);
+console.log("Number: ", num, "Type: ", typeof num); // Print the number and its type
+console.log("Boolean: ", bool, "Type: ", typeof bool); // Print the boolean and its type
+
+
+
+//solution of 3rd question
+var num1 = 10; // First number
+var num2 = 5; // Second number
+console.log("Sum: ", num1 + num2); // Add the numbers and print the result
+console.log("Difference: ", num1 - num2); // Subtract the numbers and print the result
+console.log("Product: ", num1 * num2); // Multiply the numbers and print the result
+console.log("Quotient: ", num1 / num2); // Divide the numbers and print the result
+
+
+
+
+//solution of 4th question
+var strNum = "123"; // String representation of a number
+var numStr = 456; // Number
+console.log("String representation of a number: ", strNum, "Type: ", typeof strNum
+); // Print the string and its type
+console.log("Converted to number: ", Number(strNum), "Type: ", typeof Number(strNum)); // Convert string to number and print the result and its type
+
+console.log("Number: ", numStr, "Type: ", typeof numStr); // Print the number and its type
+console.log("Converted to string: ", String(numStr), "Type: ", typeof String(numStr)); // Convert number to string and print the result and its type
+<!-- Kunal 2301641640032 PSIT AIML 2 -->
+
+
+
+
+
