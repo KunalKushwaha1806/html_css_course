@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="alert('Page is loaded')">
+    <button onclick="alert('Button clicked')" button1 id="btn1">
+        Click me button1 //Inline event
+    </button>
+    <br>
+    <button onclick="alert('Button clicked')" button2 id="btn2">
+        Click me button2
+    </button>
+    </br>
+
+    <button onclick="alert('Button clicked')" button3 id="btn3">
+        Click me button3
+    </button>
+    <script>
+        var x = document.getElementById("btn1");
+        
+        x.addEventListener("click", "func");
+        function func() {
+            alert("Button clicked");
+        }
+    </script>
+</body>
+
+</html>
