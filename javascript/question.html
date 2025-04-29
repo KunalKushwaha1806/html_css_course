@@ -1,0 +1,27 @@
+<!-- wap to convert a base 5 number to decimal number -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        var num=parseInt(prompt("Enter a base 5 number:"));
+        var sum=0;
+        var temp=num;
+        var base=5;
+        var i=0;
+        while(num>0){
+            var rem=num%10;
+            sum=sum+rem*Math.pow(base,i);
+            num=Math.floor(num/10);
+            i++;
+        }
+        document.write("Decimal value of "+temp+" is "+sum);
+    </script>
+    <br>
+    
+ </body>
+ </html>
