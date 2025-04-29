@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    #dice{
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin: auto;
+}
+#result{
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+   </style>
+</head>
+<body>
+    <button id="dice">Roll Dice</button>
+    <label id="result"></label>
+    
+
+    <script>
+        const btn=document.getElementById("dice");
+const result=document.getElementById("result");
+const max=6;
+const min=1;
+btn.onclick=function(){
+    let random=Math.floor(Math.random()*(max-min+1))+min;
+    result.textContent=`You rolled a ${random}`;
+    console.log(random);
+}
+    </script>
+    
+</body>
+</html>

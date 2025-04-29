@@ -1,0 +1,131 @@
+Kunal
+2301641640032/2313748
+PSIT-AIML-2
+22 April 2025
+FSD Assignment
+
+
+--------------------------------------------------------------------------------------
+// write a JavaScript function that calculates the square of a number . Add comments to explain each part of code.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Square of a Number</title>
+</head>
+<body>
+    <h2>Calculate Square</h2>
+    <input type="number" id="number" placeholder="Enter a number">
+    <button onclick="calculateSquare()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateSquare() {
+            let num = document.getElementById("number").value;
+            let square = num * num;
+            document.getElementById("result").innerText = "Square of " + num + " is " + square;
+        }
+    </script>
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------
+ 
+// write a javascript program to declares variables of different data types(string,number,Boolean) and prints their values and types.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Types</title>
+</head>
+<body>
+    <h2>Show Different Data Types</h2>
+    <button onclick="showTypes()">Show Types</button>
+    <p id="output"></p>
+
+    <script>
+        function showTypes() {
+            let str = "Hello";
+            let num = 123;
+            let bool = true;
+
+            let output = `
+                Value: ${str} | Type: ${typeof str}<br>
+                Value: ${num} | Type: ${typeof num}<br>
+                Value: ${bool} | Type: ${typeof bool}
+            `;
+            document.getElementById("output").innerHTML = output;
+        }
+    </script>
+</body>
+</html>
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+// write a javascript program that uses arithmetic operators to calculate the sum,difference , product and quotient of two numbers.Display the results.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+    <h2>Arithmetic Operations</h2>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="doArithmetic()">Calculate</button>
+    <p id="output"></p>
+
+    <script>
+        function doArithmetic() {
+            let a = parseFloat(document.getElementById("num1").value);
+            let b = parseFloat(document.getElementById("num2").value);
+
+            let result = `
+                Sum: ${a + b}<br>
+                Difference: ${a - b}<br>
+                Product: ${a * b}<br>
+                Quotient: ${b !== 0 ? a / b : "undefined"}
+            `;
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+// Write a js program that converts a string to a number and a number to a string. show the results and their types before and after the conversion
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Type Conversion</title>
+</head>
+<body>
+    <h2>Type Conversion</h2>
+    <input type="text" id="stringInput" placeholder="String to Number">
+    <input type="number" id="numberInput" placeholder="Number to String">
+    <button onclick="convert()">Convert</button>
+    <p id="output"></p>
+
+    <script>
+        function convert() {
+            let strVal = document.getElementById("stringInput").value;
+            let numVal = document.getElementById("numberInput").value;
+
+            let toNumber = Number(strVal);
+            let toString = String(numVal);
+
+            let result = `
+                Before: "${strVal}" | Type: ${typeof strVal}<br>
+                After to Number: ${toNumber} | Type: ${typeof toNumber}<br><br>
+                Before: ${numVal} | Type: ${typeof Number(numVal)}<br>
+                After to String: "${toString}" | Type: ${typeof toString}
+            `;
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

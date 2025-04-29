@@ -1,0 +1,77 @@
+<!-- //write a js function called greet that takes no argument and simply prints "Hello World" to the console. Call the function to see the output. -->
+<!-- html code without comments -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet() {
+            // This function prints "Hello World" to the console
+
+        }
+        greet(); // Call the function to see the output
+    </script>
+    
+</body>
+</html> -->
+
+<!-- wap to find the area of a rectangle taking lenght and breadth as input from user and display the area in alert box. -->
+<!-- html code without comments -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculateArea() {
+            var length = document.getElementById("length").value;
+            var breadth = document.getElementById("breadth").value;
+            var area = length * breadth;
+            alert("Area of the rectangle is " + area);
+        }
+    </script>  
+    
+</head>
+<body>
+    <input type="number" id="length" placeholder="Length">
+    <input type="number" id="breadth" placeholder="Breadth">
+    <br>
+    <input type="submit" value="Calculate Area" onclick="calculateArea()">
+    <br>
+    <input type="submit" value="Clear" onclick="document.getElementById('length').value=''; document.getElementById('breadth').value='';">
+    <br>
+    </body>
+</html> 
+--> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>using javascript symbol()</h2>
+    <p id="demo"></p>
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue",
+            
+        };
+        let id = Symbol("id");
+        person[id] = 12345; // Adding a symbol property
+        document.getElementById("demo").innerHTML = person[id]; // Accessing the symbol property
+    </script>
+    
+</body>
+</html>
