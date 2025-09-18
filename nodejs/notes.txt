@@ -1,0 +1,21 @@
+What's NPM??
+->npm, or Node Package Manager, is the default package manager for Node.js.
+ It is a crucial tool in the Node.js ecosystem for managing and sharing JavaScript packages and modules.
+ npm allows developers to easily install, update, and remove pre-written code modules and libraries 
+ (packages) from the npm registry, a vast online repository of JavaScript software.
+
+ command->
+ 1.npm init -y     #initialise a new project and y means yes!
+2.npm i lodash
+
+
+Express in js 
+->Express.js is a minimal and flexible Node.js web application framework designed for building web applications 
+and APIs. It simplifies the process of handling HTTP requests, routing, middleware, and rendering dynamic content. 
+
+Body-parser in js 
+->Body-parser is the Node.js body-parsing middleware. 
+It is responsible for parsing the incoming request bodies in a middleware before you handle it.
+ It's commonly used in web applications built with Express.js to handle form submissions, JSON payloads,
+  and other types of request bodies.
+
